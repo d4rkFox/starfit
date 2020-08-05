@@ -1,0 +1,133 @@
+.popup {
+    display: none;
+    max-width: 420px;
+    padding: 15px;
+    overflow: hidden;
+    color: #fff;
+    transition: all 0.7s;
+    transform: translateY(-50px);
+    @include img;
+
+    &__wrapper {
+        .fancybox-content {
+            cursor: auto;
+        }
+
+        .fancybox-button {
+            top: 10px;
+            left: 10px;
+            padding: 3px;
+        }
+    }
+
+    &__inner {
+        padding: 15px 15px 70px;
+        text-align: center;
+        border: 1px solid #fff;
+
+        &--off {
+            display: none;
+        }
+    }
+
+    &__logo {
+        margin: 0 auto 20px;
+        transition-delay: 0.1s;
+
+        &:hover {
+            background-color: transparent;
+        }
+    }
+
+    &__text {
+        max-width: 350px;
+        margin: 0 auto 30px;
+        font-size: 21px;
+        @include f400;
+        transition-delay: 0.3s;
+    }
+
+    &__desc {
+        font-size: 17px;
+        line-height: 19px;
+        transition-delay: 0.7s;
+    }
+}
+
+.form {
+    &__input,
+    &__button {
+        display: block;
+        width: 100%;
+        max-width: 251px;
+        height: 42px;
+        padding: 0 15px;
+        margin: 0 auto 15px;
+        transition-delay: 0.5s;
+    }
+
+    &__input {
+        border: none;
+        border-radius: 4px;
+
+        &::placeholder {
+            color: $gray;
+        }
+    }
+
+    &__button {
+        margin-bottom: 20px;
+        font-size: 16px;
+        @include f500;
+        background-color: #d61515;
+        border-radius: 5px;
+    }
+}
+
+.animation {
+    opacity: 0;
+    transition-duration: 0.4s;
+    transition-property: transform, opacity;
+    transform: translateY(-50px);
+}
+
+.fancybox-slide--current .animation {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.fancybox-slide--current .logo {
+    transition-delay: 0.1s;
+}
+
+.fancybox-slide--current .popup__text {
+    transition-delay: 0.3s;
+}
+
+.fancybox-slide--current .form {
+    transition-delay: 0.5s;
+}
+
+.fancybox-slide--current .popup__desc {
+    transition-delay: 0.7s;
+}
+
+.notification {
+    display: none;
+    width: 100%;
+    max-width: 400px;
+    padding: 15px 30px;
+    border: 1px solid #fff;
+
+    &--on {
+        display: block;
+    }
+
+    &__logo {
+        margin: 0 auto;
+    }
+
+    &__text {
+        font-size: 17px;
+    }
+}

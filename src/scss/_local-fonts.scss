@@ -1,0 +1,39 @@
+@font-face {
+    font-family: 'Futura';
+    src:
+        url('../fonts/futuralightc.woff2') (format('woff2')),
+        url('../fonts/futuralightc.woff') (format('woff'));
+    font-style: normal;
+    font-weight: 300;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Futura';
+    src:
+        url('../fonts/futurabookc.woff2') (format('woff2')),
+        url('../fonts/futurabookc.woff') (format('woff'));
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Futura';
+    src:
+        url('../fonts/futuramediumc.woff2') (format('woff2')),
+        url('../fonts/futuramediumc.woff') (format('woff'));
+    font-style: normal;
+    font-weight: 500;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Futura';
+    src:
+        url('../fonts/futurademic.woff2') (format('woff2')),
+        url('../fonts/futurademic.woff') (format('woff'));
+    font-style: normal;
+    font-weight: 700;
+    font-display: swap;
+}

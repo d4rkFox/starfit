@@ -1,0 +1,33 @@
+$gray: rgb(136, 136, 136);
+
+@mixin f400 {
+    font-family: Futura, sans-serif;
+    font-weight: 400;
+}
+
+@mixin f500 {
+    font-family: Futura, sans-serif;
+    font-weight: 700;
+}
+
+@mixin f700 {
+    font-family: Futura, sans-serif;
+    font-weight: 900;
+}
+
+@mixin img {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+@mixin click-area {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    min-width: 44px;
+    height: 44px;
+    content: '';
+    transform: translateY(-50%);
+}

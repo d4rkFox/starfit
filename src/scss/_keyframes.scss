@@ -1,0 +1,41 @@
+@keyframes rotate {
+    from {
+        box-shadow: 0 0 0 0 rgba(214, 21, 21, 0.5);
+        transform: rotate(0);
+    }
+
+    50% {
+        box-shadow: 0 0 0 15px rgba(214, 21, 21, 0.5);
+        transform: rotate(90deg);
+    }
+
+    to {
+        box-shadow: 0 0 0 0 rgba(214, 21, 21, 0.5);
+        transform: rotate(0);
+    }
+}
+
+@keyframes arrowUp {
+    from {
+        top: 60%;
+    }
+
+    50% {
+        top: 35%;
+    }
+
+    to {
+        top: 60%;
+    }
+}
+
+[data-aos="moveUp"] {
+    opacity: 0;
+    transition-property: transform, opacity;
+    transform: translateY(100%);
+
+    &.aos-animate {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
