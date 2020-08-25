@@ -450,6 +450,7 @@
         max-width: 400px;
         padding-right: 70px;
         padding-left: 30px;
+        font-style: normal;
     }
 
     &__adress {
@@ -570,6 +571,9 @@
 
     &__map {
         display: block;
+        width: 770px;
+        height: 407px;
+        border: none;
     }
 }
 //end section contact===============================================================================
@@ -578,7 +582,6 @@
     position: fixed;
     right: 50px;
     bottom: 50px;
-    display: none;
     width: 72px;
     height: 72px;
     background-color: #d61515;

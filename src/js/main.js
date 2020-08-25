@@ -2,20 +2,20 @@ $(function () {
     //fancybox=======================================================================
     $(".header__button, .phone, .header__btn, .footer__btn, .step__popup").fancybox({
         baseClass: "popup__wrapper",
-        beforeShow  : function() {
-            $('.phone').addClass('phone--offset');
-           },
-           afterClose  : function(){
-             $('.phone').removeClass('phone--offset');
-           }
+        beforeShow: function () {
+            $(".phone").addClass("phone--offset");
+        },
+        afterClose: function () {
+            $(".phone").removeClass("phone--offset");
+        },
     });
     // end fancybox==================================================================
     //fixed buttonPhone==============================================================
     function buttonPhone() {
-        let button = $(".phone");
+        var button = $(".phone");
         $(window).on("scroll", () => {
             if ($(this).scrollTop() >= 900) {
-                button.fadeIn();
+                button.removeClass("phone--offset");
             }
         });
     }
@@ -47,5 +47,5 @@ $(function () {
         duration: 1000,
         once: true,
     });
-    //end animation AOS====================================================================
+    //end animation AOS====================================================================  
 });
