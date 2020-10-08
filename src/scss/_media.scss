@@ -248,8 +248,14 @@
         }
     }
 
-    .contact__location {
-        box-shadow: none;
+    .contact {
+        &__location {
+            box-shadow: none;
+        }
+
+        &__map {
+            height: 290px;
+        }
     }
 }
 
@@ -341,7 +347,7 @@
             width: 100%;
             margin: 0 auto;
 
-            & + & {
+            &+& {
                 margin-top: 10px;
             }
         }
@@ -384,7 +390,7 @@
         }
 
         &__item {
-            & + & {
+            &+& {
                 margin-top: 70px;
             }
 
@@ -549,7 +555,7 @@
         }
 
         &__social {
-            & + & {
+            &+& {
                 margin-left: 20px;
             }
         }
@@ -568,8 +574,13 @@
             }
         }
 
-        &__worktime::before {
-            top: 2px;
+        &__worktime {
+            width: 100%;
+            max-width: 242px;
+
+            &::before {
+                top: 2px;
+            }
         }
 
         &__location {
